@@ -1,0 +1,8 @@
+.pro{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+img{
+    width: auto;
+    height: 100px;
+}
