@@ -55,7 +55,7 @@ class MediumScore extends Component {
                             required
                             onChange={this.handleChange}
                         />
-                        <div className="invalid-feedback">Điểm không hợp lệ</div>
+                        <div className="invalid-feedback"></div>
                     </div>
                     <div className="form-group">
                     <label htmlFor="HK2">Điểm HK2: </label>
@@ -70,7 +70,7 @@ class MediumScore extends Component {
                             required
                             onChange={this.handleChange}
                         />
-                        <div className="invalid-feedback">Điểm không hợp lệ</div>
+                        <div className="invalid-feedback"></div>
                     </div>
                     <div className="form-group">
                     <label htmlFor="HK2">Điểm Trung Bình: </label>
@@ -80,7 +80,7 @@ class MediumScore extends Component {
                             readOnly
                             value={this.state.Avg}
                         />
-                        <div className="invalid-feedback">Điểm không hợp lệ</div>
+                        <div className="invalid-feedback"></div>
                     </div>
                     <div className="form-group">
                     <label htmlFor="HK2">Kết quả: </label>

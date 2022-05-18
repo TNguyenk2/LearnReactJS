@@ -1,17 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
-
-import FormEx1 from "./Components/FormEx1";
-import MediumScore from "./Components/Forms/MediumScore";
+import { render } from '@testing-library/react';
+import React from "react";
+// import MediumScore from "./Components/Forms/MediumScore";
+// import Form from "./Components/Forms/MediumScore";
+import Score from './Components/Forms/Score';
+import Menu from './Components/Forms/Menu';
 function App(){
   return(
     <div>
-      {/* <Header></Header>
-      <Menu></Menu>
-      <Products></Products> */}
-     {/* <Example></Example> */}
-    {/* <FormEx1></FormEx1> */}
-    <MediumScore></MediumScore>
+
+    {/* <MediumScore></MediumScore> */}
+    <Score></Score>
+    <Menu></Menu>
     </div>
   );
 }
