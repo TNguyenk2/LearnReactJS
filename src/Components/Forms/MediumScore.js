@@ -12,6 +12,7 @@ class MediumScore extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+    
     handleChange = (event) => {
         let key = event.target.name;
         let val = event.target.value;
@@ -23,20 +24,24 @@ class MediumScore extends Component {
         this.setResult();
         this.setRank();
     };
+
     handleSubmit = (event) => {
         event.preventDefault();
         alert("Bạn là học sinh " + this.state.Rank);
     };
+
     setResult = () => {
         if (this.state.Avg > 3.5) this.setState({Result: "Được lên lớp"});
         else this.setState({Result: "Ở lại lớp"});
     };
+
     setRank = () => {
         if (this.state.Avg <3.5) this.setState({Rank: "Yếu"});
         else if (this.state.Avg <6.5) this.setState({Rank: "Trung Bình"});
         else if (this.state.Avg <=8) this.setState({Rank: "Khá"});
         else (this.setState ({Rank: "Giỏi"}));
     };
+
     render() {
         return (
             <div className="container">
@@ -57,6 +62,7 @@ class MediumScore extends Component {
                         />
                         <div className="invalid-feedback"></div>
                     </div>
+
                     <div className="form-group">
                     <label htmlFor="HK2">Điểm HK2: </label>
                         <input
@@ -72,6 +78,7 @@ class MediumScore extends Component {
                         />
                         <div className="invalid-feedback"></div>
                     </div>
+
                     <div className="form-group">
                     <label htmlFor="HK2">Điểm Trung Bình: </label>
                         <input
@@ -82,6 +89,7 @@ class MediumScore extends Component {
                         />
                         <div className="invalid-feedback"></div>
                     </div>
+
                     <div className="form-group">
                     <label htmlFor="HK2">Kết quả: </label>
                         <input
@@ -92,6 +100,7 @@ class MediumScore extends Component {
                             value={this.state.Result}
                         />
                     </div>
+
                     <div className="form-group">
                     <label htmlFor="HK2">Xếp loại: </label>
                         <input
@@ -102,6 +111,7 @@ class MediumScore extends Component {
                             value={this.state.Rank}
                         />
                     </div>
+
                     <button type="submit" value="Submit" className="btn btn-primary">Xem kết quả</button>
                 </form>             
             </div>
